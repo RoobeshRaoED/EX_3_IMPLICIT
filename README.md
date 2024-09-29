@@ -1,4 +1,5 @@
 ## EXPERIMENT:03  Implement an application that uses Intent(Implicit) using Android Studio.
+
 Design an Android application with a text field and an "Open in Browser" button. On pressing the button, the app should fetch the URL from the text field and open it in a browser using an Implicit Intent.
 
 ## AIM:
@@ -10,7 +11,41 @@ Latest Version Android Studio
 
 ## ALGORITHM:
 
+Step 1: Create a New Android Project:
+- Open Android Studio and click on "New Project."
+- Select "Empty Activity" and click "Next."
+- Enter the application name, project name, and desired package name.
+- Choose a launcher icon and click "Finish."
 
+Step 2: Design the Layout:
+- Open `activity_main.xml` in the `res/layout` folder.
+- Add an EditText for the URL input.
+- Add a Button labeled "Open in Browser."
+
+Step 3: Initialize UI Components:
+- Open `MainActivity.java` and retrieve references to the EditText and Button.
+
+Step 4: Set OnClickListener for the Button:
+- Implement an OnClickListener for the Button to handle click events.
+
+Step 5: Retrieve the URL from the EditText:
+- In the click listener, get the text entered in the EditText.
+
+Step 6: Validate the URL:
+- Check if the entered URL is not empty. If empty, display a message to the user.
+
+Step 7: Create an Implicit Intent:
+- If the URL is valid, create an implicit intent to open the URL in the web browser.
+
+Step 8: Start the Intent:
+- Use the intent to start the browser activity with the specified URL.
+
+Step 9: Test the Application:
+- Run the application on an emulator or physical device.
+- Enter a valid URL and click the Button to ensure it opens in the browser.
+
+Step 10: Handle Edge Cases (Optional):
+- Consider implementing error handling for invalid URLs or providing user guidance.
 
 ## PROGRAM:
 ### MainActivity.java:
@@ -74,11 +109,10 @@ public class MainActivity extends AppCompatActivity {
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
 ```
-## OUTPUT
+## OUTPUT:
 
-<img src="https://github.com/RoobeshRaoED/BASIC-ANDROID-_EX_01/blob/main/OnCreate%20Executed.png" width="400">
+<img src="1.png" width="400">                        <img src="2.png" width="400">
 
+## RESULT:
 
-
-## RESULT
 Thus a Simple Android Application create a navigate button using Implicit Intent to display the web page using Android Studio was developed and executed successfully.
